@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <main>
+      <form action="" class="formulario" id="formulario">
+        <div class="formulario__grupo" id="grupo__nombre">
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El nombre  solo puede contener letras y espacios</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__correo">
+          <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo electrónico">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo</p>
+      </div>
+      
+      <div class="formulario__grupo" id="grupo__telefono">
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Teléfono / Celular">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo de 14 digitos</p>
+      </div>
+
+        <div class="formulario__grupo" id="grupo__colegio">
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="colegio" id="colegio" placeholder="Colegio">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El colegio tiene que ser de 4 a 16 digitos</p>
+        </div>
+        
+        <!-- Select 1 -->
+        <div class="formulario__grupo boxInput" id="grupo__ocupacion">
+          <div class="formulario__grupo-input">
+              <select type="text" class="formulario__input t-18" id="ocupacion" name="ocupacion" label="Ocupación" >
+                <option value="">Seleccionar ocupación</option>
+                <option value="Tutor">Tutor / Profesor</option>
+                <option value="Director">Director</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Seleciona una ocupación</p>
+        </div>
+
+        <div class="formulario__grupo boxInput" id="grupo__pais">
+          <div class="formulario__grupo-input">
+              <select type="text" class="formulario__input t-18" id="pais" name="pais" label="País" >
+                <option value="">Seleccionar país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Seleciona un país</p>
+        </div>
+
+        
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el fomrulario</p>
+        </div>
+        
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          
+        </div>
+        
+      </form>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymouse"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
